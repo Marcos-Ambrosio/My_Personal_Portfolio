@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Animation aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 <main class="main">
@@ -29,7 +32,7 @@
                     </div>
                     <li class="mobile">
                         <a class="social-btn" href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-                        <a class="social-btn" href="#"><i class="fab fa-github"></i> Github</a>
+                        <a class="social-btn" href="#"><i class="fab fa-github"></i> Github </a>
                     </li>
                     <li class="nav-link"><a href="#home" class="active">Home</a></li>
                     <li class="nav-link"><a href="#about">About</a></li>
@@ -270,7 +273,7 @@
                         <input type="email" placeholder="Email" name="email">
                     </div>
                     <div class="box">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Message" name="msg"></textarea>
+                        <textarea id="" cols="30" rows="10" placeholder="Message" name="msg"></textarea>
                     </div>
                     <div class="box">
                         <button type="submit" class="btn btn-send">Send</button>
@@ -297,7 +300,7 @@
                 </div>
                 <div class="box buttons">
                     <a class="btn" href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-                    <a class="btn" href="#"><i class="fab fa-github"></i> Github</a>
+                    <a class="btn" href="#"><i class="fab fa-github"></i> Github </a>
                 </div>
                 <div class="box">
                     <a href="" class="btn btn-download"><i class="fa fa-download"></i> Download CV</a>
@@ -317,6 +320,21 @@
 </main>
 
 
+<script src="js/toggleButton.js"></script>
+<script src="js/aboutSession.js"></script>
+<script src="js/scrollMenu.js"></script>
+<script src="js/mouseoverProject.js"></script>
+<script src="js/chooseSkills.js"></script>
+<script src="https://kit.fontawesome.com/5b8f00096f.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration : 1300
+    });
+</script>
+
+
+
 <script type="module">
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxMKwy5X0nLhu4AZgJ1iwd8dNj-Jjbp7R20HPmFSdev1NWeds9jtDD2JM6z_F6df2yc/exec'
     const form = document.forms['submit-to-google-sheet']
@@ -328,21 +346,6 @@
         .catch(error => console.error('Error!', error.message))
     })
 </script>
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-
-    AOS.init({
-        duration : 1300
-    });
-
-</script>
-<script src="js/toggleButton.js"></script>
-<script src="js/aboutSession.js"></script>
-<script src="js/scrollMenu.js"></script>
-<script src="js/mouseoverProject.js"></script>
-<script src="js/chooseSkills.js"></script>
-<script src="https://kit.fontawesome.com/5b8f00096f.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

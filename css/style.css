@@ -7,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
 }
 
 
@@ -17,6 +16,10 @@
     --black-color01: #000;
     --black-color02: #333;
     --white-color01: #eee;
+}
+
+body {
+    background-color: #223;
 }
 
 html{
@@ -201,12 +204,12 @@ body .nav-link a.btn-contact i {
 
 .logo {
     color: var(--white-color01);
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 .logo span {
     animation: animation 10s infinite;
-    font-size: 2.4rem;
+    font-size: 2.1rem;
 }
 
 

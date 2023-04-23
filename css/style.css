@@ -128,7 +128,7 @@ body .nav-link a.btn-contact:hover , body .nav-link a.btn-contact.active {
 }
 
 .open i , .close i {
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 
 /*
@@ -331,6 +331,7 @@ body .nav-link a.btn-contact:hover , body .nav-link a.btn-contact.active {
 .about .about-menu {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 10px;
 }
 
@@ -339,6 +340,7 @@ body .nav-link a.btn-contact:hover , body .nav-link a.btn-contact.active {
     transition: .3s;
     font-size: 1.2rem;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .about .about-menu li:hover{
@@ -376,7 +378,6 @@ body .nav-link a.btn-contact:hover , body .nav-link a.btn-contact.active {
     color: var(--main-color02);
     text-shadow: 1px 1px 1px var(--white-color01);
 }
-
 
 
 .about .about-content {
@@ -739,6 +740,10 @@ body .nav-link a.btn-contact:hover , body .nav-link a.btn-contact.active {
         margin: 0 7px;
     }
 
+    .logo {
+        font-size: 1.2rem;
+    }
+
     .open , .close {
         display: block;
     }
@@ -751,6 +756,18 @@ body .nav-link a.btn-contact:hover , body .nav-link a.btn-contact.active {
         position: absolute;
         top: 20px;
         right: 30px;
+    }
+
+    .welcome-wrapper h1 {
+        font-size: 1rem;
+    }
+    
+    .welcome-wrapper h3 {
+        font-size: 1rem;
+    }
+    
+    .welcome-wrapper h2 {
+        font-size: 1rem;
     }
 
     .header .logo {
@@ -770,9 +787,12 @@ body .nav-link a.btn-contact:hover , body .nav-link a.btn-contact.active {
         justify-content: center;
         align-items: center;
         gap: 20px;
-        -webkit-column-gap: 20px;
         border-left: 3px solid var(--main-color02);
         border-bottom-left-radius: 40px;
+    }
+
+    .header .navbar ul li {
+        margin: 10px 0;
     }
 
     .about {
@@ -805,6 +825,15 @@ body .nav-link a.btn-contact:hover , body .nav-link a.btn-contact.active {
     .about .wrapper-info .box.w-100{
         width: 100%;
     }
+
+    .about .about-menu li{
+        font-size: .7rem;
+    }
+    
+    .about .bio-content .box p {
+        font-size: .7rem;
+    }
+    
     
     .services .row .card {
         width: 100%;

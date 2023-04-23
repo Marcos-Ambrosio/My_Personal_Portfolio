@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Animation aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,10 +60,10 @@
     <div class="container">
         <h2>About</h2>
         <div class="row">
-            <div class="wrapper-image">
+            <div class="wrapper-image" data-aos="fade-up">
                 <img src="images/img-big.png">
             </div>
-            <div class="wrapper-info">
+            <div class="wrapper-info" data-aos="fade-up">
                 <ul class="about-menu">
                     <li class="about-link active" id="bio">Biografy</li>
                     <li class="about-link" id="aboutme">About me</li>
@@ -219,7 +221,7 @@
     <div class="container">
         <h2>Projects</h2>
         <div class="row">
-            <div class="card card1">
+            <div class="card card1" data-aos="fade-up">
                 <div class="card-img">
                     <!-- <img src="images/iMove.png"> -->
                     <div class="card-text">
@@ -232,21 +234,21 @@
                     </div>
                 </div>
             </div>
-            <div class="card card2">
+            <div class="card card2" data-aos="fade-up">
                 <div class="card-img">
                     <div class="card-text">
                         <h4>Em breve</h4>
                     </div>
                 </div>
             </div>
-            <div class="card card3">
+            <div class="card card3" data-aos="fade-up">
                 <div class="card-img">
                     <div class="card-text">
                         <h4>Em breve</h4>
                     </div>
                 </div>
             </div>
-            <div class="card card4">
+            <div class="card card4" data-aos="fade-up">
                 <div class="card-img">
                     <div class="card-text">
                         <h4>Em breve</h4>
@@ -262,7 +264,7 @@
     <div class="container">
         <h2>Contact</h2>
         <div class="row"  >
-            <div class="card card-form">
+            <div class="card card-form" data-aos="fade-up">
                 <form action="" name="contact-us">
                     <div class="box">
                         <input type="text" id="name" placeholder="Name" name="name">
@@ -278,7 +280,7 @@
                     </div>
                 </form>
             </div>
-            <div class="card card-info">
+            <div class="card card-info" data-aos="fade-up">
                 <h3>Contact me</h3>
                 <div class="box">
                     <p><i class="fab fa-telegram"></i> Telegram : </p>
@@ -327,7 +329,12 @@
 <script src="js/mouseoverProject.js"></script>
 <script src="js/chooseSkills.js"></script>
 <script src="https://kit.fontawesome.com/5b8f00096f.js" crossorigin="anonymous"></script>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration : 1300
+    });
+</script>
 
 
   

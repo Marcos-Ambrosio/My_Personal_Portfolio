@@ -178,7 +178,7 @@ body .nav-link a.btn-contact:hover , body .nav-link a.btn-contact.active {
 
 
 .header {
-    position: fixed;
+    /* position: fixed; */
     z-index: 2;
     transition: 1s;
     width: 100%;
@@ -798,6 +798,7 @@ body .nav-link a.btn-contact:hover , body .nav-link a.btn-contact.active {
 
     .w50 {
         font-size: .8rem;
+        padding: 5px 0;
     }
 
     .about {
@@ -848,11 +849,13 @@ body .nav-link a.btn-contact:hover , body .nav-link a.btn-contact.active {
     .projects .row {
         display: grid;
         grid-template-columns: repeat(1 , 1fr);
+        gap: 0;
     }
     
     .projects .card {
         height: 240px;
         width: 100%;
+        margin-top: 20px;
     }
     
     .contact .card {

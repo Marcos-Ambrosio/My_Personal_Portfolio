@@ -25,6 +25,7 @@ html{
 
 body {
     overflow-x: hidden;
+    width: 100vw;
 }
 
 ul {
@@ -49,7 +50,7 @@ img {
 section {
     padding: 40px 20px ;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 
 section h2 {
@@ -57,7 +58,7 @@ section h2 {
     text-align: center;
     text-shadow: 2px 2px 2px var(--black-color01);
     margin-top: 50px;
-    font-size: 2.4rem;
+    font-size: 3.4rem;
 }
 
 /* Buttons */
@@ -112,6 +113,11 @@ body .nav-link a.btn-contact:hover , body .nav-link a.btn-contact.active {
     text-decoration: none;
     text-shadow: 2px 2px 2px var(--black-color01);
 }
+
+body .nav-link a.btn-contact i {
+    margin-right: 10px;
+}
+
 
 .py3 {
     padding-top: 5px;
@@ -180,7 +186,7 @@ body .nav-link a.btn-contact:hover , body .nav-link a.btn-contact.active {
     position: fixed;
     z-index: 2;
     transition: 1s;
-    width: 100%;
+    width: 100vw;
 }
 
 
@@ -736,10 +742,6 @@ body .nav-link a.btn-contact:hover , body .nav-link a.btn-contact.active {
         padding: 0;
     }
 
-    body {
-        font-size: 10px;
-    }
-
     .mobile {
         display: flex;
     }
@@ -772,10 +774,6 @@ body .nav-link a.btn-contact:hover , body .nav-link a.btn-contact.active {
     
     .welcome-wrapper h2 {
         font-size: 1rem;
-    }
-
-    .header .logo {
-        font-size: 1.5rem;
     }
 
     .header .navbar ul {

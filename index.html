@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 <main class="main">
@@ -31,14 +31,14 @@
 
                     </div>
                     <li class="mobile">
-                        <a class="social-btn" href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-                        <a class="social-btn" href="#"><i class="fab fa-github"></i> Github </a>
+                        <a class="btn social-btn py3" href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                        <a class="btn social-btn py3" href="#"><i class="fab fa-github"></i> GitHub </a>
                     </li>
                     <li class="nav-link"><a href="#home" class="active">Home</a></li>
                     <li class="nav-link"><a href="#about">About</a></li>
                     <li class="nav-link"><a href="#services">Services</a></li>
                     <li class="nav-link"><a href="#projects">Projects</a></li>
-                    <li class="nav-link"><a class="contact" href="#contact"><i class="fa fa-phone"></i> Contact</a></li>
+                    <li class="nav-link"><a class="btn-contact" href="#contact"><i class="fa fa-phone"></i> Contact</a></li>
                     <button class="close"><i class="fa fa-times"></i></button>
                 </ul>
             </nav>
@@ -49,8 +49,8 @@
         <h3>Welcome to my <span>Personal Portfolio</span></h3>
         <h1>I'm Marcos Ambrósio</h1>
         <h2>Developer Front-End</h2>
-        <p style="margin-top: 30px;"><a class="social-btn" href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-        <a class="social-btn" href="#"><i class="fab fa-github"></i> Github</a></p>
+        <p style="margin-top: 30px;" class="buttons"><a class="btn social-btn py3" href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+        <a class="btn social-btn py3" href="#"><i class="fab fa-github"></i> GitHub</a></p>
     </div>
 
 </div>
@@ -60,10 +60,10 @@
     <div class="container">
         <h2>About</h2>
         <div class="row">
-            <div class="wrapper-image" data-aos="fade-right">
+            <div class="wrapper-image" data-aos="fade-up">
                 <img src="images/img-big.png">
             </div>
-            <div class="wrapper-info" data-aos="fade-left">
+            <div class="wrapper-info" data-aos="fade-up">
                 <ul class="about-menu">
                     <li class="about-link active" id="bio">Biografy</li>
                     <li class="about-link" id="aboutme">About me</li>
@@ -264,23 +264,23 @@
     <div class="container">
         <h2>Contact</h2>
         <div class="row"  >
-            <div class="card card-form" data-aos="fade-right">
-                <form name="submit-to-google-sheet">
+            <div class="card card-form" data-aos="fade-up">
+                <form action="" name="contact-us">
                     <div class="box">
-                        <input type="text" placeholder="Name" name="name">
+                        <input type="text" id="name" placeholder="Name" name="name">
                     </div>
                     <div class="box">
-                        <input type="email" placeholder="Email" name="email">
+                        <input type="email" id="email" placeholder="Email" name="email">
                     </div>
                     <div class="box">
-                        <textarea id="" cols="30" rows="10" placeholder="Message" name="msg"></textarea>
+                        <textarea id="message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
                     </div>
                     <div class="box">
-                        <button type="submit" class="btn btn-send">Send</button>
+                        <button type="submit" class="btn py3 w50"><i class="fa fa-send"></i> Send</button>
                     </div>
                 </form>
             </div>
-            <div class="card card-info" data-aos="fade-left">
+            <div class="card card-info" data-aos="fade-up">
                 <h3>Contact me</h3>
                 <div class="box">
                     <p><i class="fab fa-telegram"></i> Telegram : </p>
@@ -299,11 +299,11 @@
                     <p>marcosambrosio555</p>
                 </div>
                 <div class="box buttons">
-                    <a class="btn" href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-                    <a class="btn" href="#"><i class="fab fa-github"></i> Github </a>
+                    <a class="btn w50 py3" href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                    <a class="btn w50 py3" href="#"><i class="fab fa-github"></i> GitHub </a>
                 </div>
                 <div class="box">
-                    <a href="" class="btn btn-download"><i class="fa fa-download"></i> Download CV</a>
+                    <a href="/my-cv.pdf" download="my-cv" type="application/pdf" class="btn btn-download py3"><i class="fa fa-download"></i> Download CV</a>
                 </div>
             </div>
         </div>
@@ -317,6 +317,9 @@
         <p>Developed by Marcos Pereira Ambrosio | &copy; Copyright 2022</p>
     </div>
 </footer>
+    <div class="modal">
+        <p class="text">Mensagem enviada com sucesso <i class="fa fa-check"></i></p>
+    </div>
 </main>
 
 
@@ -334,18 +337,34 @@
 </script>
 
 
-
-<script type="module">
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxMKwy5X0nLhu4AZgJ1iwd8dNj-Jjbp7R20HPmFSdev1NWeds9jtDD2JM6z_F6df2yc/exec'
-    const form = document.forms['submit-to-google-sheet']
-
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzyQtN-v2UihzR6lGLpn9hu6G4d8EPzOF7Bhh_FT4fI8VWsfvfkX_z9GRlN25P9qDQn/exec'
+    const form = document.forms['contact-us']
+  
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
+        .then(response => {
+            console.log('Success!', response)
+            displayMsg()
+        })
         .catch(error => console.error('Error!', error.message))
     })
-</script>
 
+    function displayMsg(){
+        const modal = document.querySelector(".modal")
+        const name = document.querySelector("#name")
+        const email = document.querySelector("#email")
+        const message = document.querySelector("#message")
+        modal.style.opacity = 1
+        setTimeout(()=>{
+            name.value = ''
+            email.value = ''
+            message.value = ''
+            modal.style.opacity = 0
+        } , 1500)
+    }
+  </script>
 </body>
 </html>
